@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursera.DishDetail2.0", "Coursera.DishDetail2.0\Coursera.DishDetail2.0.csproj", "{4232F8D7-4EC4-422C-934B-0F2EEBE7BECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4232F8D7-4EC4-422C-934B-0F2EEBE7BECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4232F8D7-4EC4-422C-934B-0F2EEBE7BECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4232F8D7-4EC4-422C-934B-0F2EEBE7BECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4232F8D7-4EC4-422C-934B-0F2EEBE7BECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {444C6D80-56CA-4B36-B8F4-8B3DE9BBCF9A}
+	EndGlobalSection
+EndGlobal

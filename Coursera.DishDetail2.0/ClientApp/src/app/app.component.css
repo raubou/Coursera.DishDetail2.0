@@ -1,0 +1,8 @@
+.main {
+  width: 99%;
+  height: inherit;
+  margin: 0px auto;
+  float: none;
+  overflow: hidden;
+  margin-top: 10px;
+}
