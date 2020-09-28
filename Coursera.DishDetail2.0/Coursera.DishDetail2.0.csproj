@@ -43,6 +43,7 @@
     <None Remove="ClientApp\src\app\shared\feedback.ts" />
     <None Remove="ClientApp\src\app\shared\leader.ts" />
     <None Remove="ClientApp\src\app\shared\leaders.ts" />
+    <None Remove="ClientApp\src\app\shared\routes.ts" />
     <None Remove="ClientApp\src\app\shared\webServiceURL.ts" />
   </ItemGroup>
 

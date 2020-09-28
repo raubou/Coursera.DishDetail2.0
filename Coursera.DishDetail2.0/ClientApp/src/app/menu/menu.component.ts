@@ -3,6 +3,7 @@ import { Dish } from '../shared/dish';
 import { DishService } from '../services/dish.service';
 import { visibility, flyInOut, expand } from '../animations/app.animations';
 
+
 @Component({
     selector: 'app-menu',
     templateUrl: './menu.component.html',

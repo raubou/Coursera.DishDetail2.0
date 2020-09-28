@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ɵINJECTOR_IMPL__POST_R3__ } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import { HttpClient } from '@angular/common/http/';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -38,6 +38,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WebServiceURL } from './shared/webServiceURL';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 import { HighlightDirective } from './directives/highlight.directive';
+import { routes } from './shared/routes';
 
 @NgModule({
   declarations: [
@@ -62,14 +63,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     //HttpClient,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: DefaultComponent, pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'contact', component: ContactComponent }
-    ]),
+    RouterModule.forRoot(routes),
     FlexLayoutModule,
     MatGridListModule,    
     MatCardModule,
@@ -84,8 +78,10 @@ import { HighlightDirective } from './directives/highlight.directive';
     MatSlideToggleModule,
     MatInputModule,
     MatCheckboxModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    CommonModule,
   ],
+  exports: [RouterModule],
   entryComponents: [LoginComponent],
   providers: [DishService, LeaderService, { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: false } }, , { provide: 'WebServiceURL', useValue: WebServiceURL }, ProcessHTTPMsgService],
   bootstrap: [AppComponent]
