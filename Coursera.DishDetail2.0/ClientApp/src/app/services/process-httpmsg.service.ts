@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-//import { throwError } from 'rxjs';
+import { throwError } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Injectable({
@@ -9,14 +9,15 @@ export class ProcessHTTPMsgService {
 
   constructor() { }
 
-  handleError(error: HttpErrorResponse) {
+  public handleError(error: HttpErrorResponse | any) {
     let errMsg: string;
+
     if (error.error instanceof ErrorEvent) {
       errMsg = error.error.message;
+    } else {
+      errMsg = `${error.status} - ${error.statusText || ''} ${error.error}`;
     }
-    else {
-      errMsg = `${error.status} - ${error.statusText || ''} ${error.error.Message}`;
-    }
-    //throwError(errMsg)
+
+    return throwError(errMsg);
   }
 }

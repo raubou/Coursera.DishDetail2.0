@@ -43,6 +43,7 @@
     <None Remove="ClientApp\src\app\shared\feedback.ts" />
     <None Remove="ClientApp\src\app\shared\leader.ts" />
     <None Remove="ClientApp\src\app\shared\leaders.ts" />
+    <None Remove="ClientApp\src\app\shared\Promotion.ts" />
     <None Remove="ClientApp\src\app\shared\routes.ts" />
     <None Remove="ClientApp\src\app\shared\webServiceURL.ts" />
   </ItemGroup>
@@ -60,7 +61,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\directives\" />
-    <Folder Include="ClientApp\src\app\services\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

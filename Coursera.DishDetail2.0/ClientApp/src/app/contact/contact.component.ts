@@ -104,9 +104,6 @@ export class ContactComponent implements OnInit {
       agree: false,
       contactType: 'none',
       message: ''
-      //agree: [false, Validators.required],
-      //contactType: ['none', Validators.required],
-      //message: ['', Validators.required]
     });
     this.feedbackFormDirtective.resetForm();
   }
